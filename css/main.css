@@ -1,0 +1,172 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat: 300,600');
+
+/*defaults*/
+
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Sans-Serif;
+    font-weight: bold;
+    margin: .25em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.5em;
+}
+
+a, p, input, textarea {
+    font-family: 'Montserrat', Sans-Serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    user-select: none;
+}
+
+/*reusable classes*/
+
+.p {
+    max-width: 40em;
+    margin: 0 2em;
+    text-align: justify;
+}
+
+/*home page*/
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background: url(../img/index/bg.png);
+    background-position: center;
+    background-size: cover;*/
+    background: #222222;
+    z-index: -1;
+}
+
+.vid{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container {
+    flex-wrap: nowrap;
+}
+
+.face {
+    height: 12em;
+    width: 12em;
+    background-image: url(../img/index/face.jpg);
+    background-position: top;
+    background-size: 12em auto;
+    border-radius: 50%;
+}
+
+/*other pages*/
+
+.page-title {
+    margin: 1rem;
+    padding: 0;
+    font-size: 3rem;
+}
+
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1em;
+}
+
+.back-button img {
+    height: 3em;
+    width: 3em;
+}
+
+.back-button div {
+    background: rgba(200,200,200,.4);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.back-button:hover div {
+    height: 3.5em;
+    width: 3.5em;
+    top: -0.25em;
+    left: -0.25em;
+}
+
+/*thumbs*/
+
+.thumb {
+    height: 20em;
+    width: 20em;
+    background: #aaaaaa;
+    margin: .25em;
+}
+
+.thumb img {
+    width: 20em;
+    height: 20em;
+}
+
+.bar {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    padding: 1em;
+    border: solid .25em #00aeed;
+}
+
+.button:hover {
+    background: #00aeed;
+    color: white;
+}
